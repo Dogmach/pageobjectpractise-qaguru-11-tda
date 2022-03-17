@@ -37,7 +37,7 @@ public class RegForm {
             citySelection = $("#city"),
             resultHeader = $("#example-modal-sizes-title-lg"),
             resultTable = $(".table-responsive"),
-            stateSelectList = $("#stateCity-wrapper"),
+            stateSelectList = $("#stateCity-wrapper");
 
     //actions
     @Step("Открываем тестируемую страницу")
