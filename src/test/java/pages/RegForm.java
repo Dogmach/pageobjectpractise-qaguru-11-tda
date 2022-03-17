@@ -118,15 +118,6 @@ public class RegForm {
         return this;
     }
 
-    /*@Step("Выбираем штат")
-    public RegistrationPage selectState(String state) {
-        stateSelect.click();
-        stateSelectList.$(byText(state)).click();
-        return this;
-    }*/
-    /*stateSelect = $("#state"),
-    stateSelectList = $("#stateCity-wrapper"),*/
-
     @Step("Проставляем город студента")
     public RegForm selectCity(String city) {
         citySelection.click();
