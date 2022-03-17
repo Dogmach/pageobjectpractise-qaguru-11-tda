@@ -36,7 +36,8 @@ public class RegForm {
             stateSelection = $("#state"),
             citySelection = $("#city"),
             resultHeader = $("#example-modal-sizes-title-lg"),
-            resultTable = $(".table-responsive");
+            resultTable = $(".table-responsive"),
+            stateSelectList = $("#stateCity-wrapper"),
 
     //actions
     @Step("Открываем тестируемую страницу")
@@ -113,9 +114,18 @@ public class RegForm {
     public RegForm selectState(String state) {
         stateSelection.scrollIntoView(true);
         stateSelection.click();
-        $(byText(state)).click();
+        stateSelectList.$(byText(state)).click();
         return this;
     }
+
+    /*@Step("Выбираем штат")
+    public RegistrationPage selectState(String state) {
+        stateSelect.click();
+        stateSelectList.$(byText(state)).click();
+        return this;
+    }*/
+    /*stateSelect = $("#state"),
+    stateSelectList = $("#stateCity-wrapper"),*/
 
     @Step("Проставляем город студента")
     public RegForm selectCity(String city) {
